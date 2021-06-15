@@ -32,7 +32,7 @@ def video_stream():
 
      faces = faceCascade.detectMultiScale(cv2image,scaleFactor=1.1,minNeighbors=5,minSize=(30, 30),flags=cv2.CASCADE_SCALE_IMAGE)
 
-    # Draw a rectangle around the faces
+    # Draw an ellipse around the faces
      for (x, y, w, h) in faces:
         cenx = x + w//2
         ceny = y + h//2
